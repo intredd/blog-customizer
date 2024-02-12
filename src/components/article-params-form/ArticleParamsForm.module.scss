@@ -5,7 +5,7 @@
   width: 616px;
   transform: translate(-616px);
   transition: transform 0.5s ease;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .container_open {
@@ -14,6 +14,7 @@
 
 .form {
   display: flex;
+  gap: 50px;
   flex-direction: column;
   box-sizing: border-box;
   width: 616px;
