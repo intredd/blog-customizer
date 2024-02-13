@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 
+const doc = document;
+
 type UseOutsideClose = {
 	isOpen: boolean;
 	onChange: (newValue: boolean) => void;
-	rootRef: React.RefObject<HTMLDivElement>;
+	rootRef: React.RefObject<HTMLElement>;
 };
 
 export const useOutsideClose = ({
@@ -12,17 +14,17 @@ export const useOutsideClose = ({
 	onChange,
 }: UseOutsideClose) => {
 	useEffect(() => {
-		const handleClick = (event: MouseEvent) => {
+		const handleClickAside = (event: MouseEvent) => {
 			const { target } = event;
-			if (target instanceof Node && !rootRef.current?.contains(target)) {
+			if (target instanceof Node && !rootRef.current?.contains(target) && document.body.contains(target)) {
 				onChange?.(false);
 			}
 		};
 
-		window.addEventListener('click', handleClick);
+		window.addEventListener('click', handleClickAside);
 
 		return () => {
-			window.removeEventListener('click', handleClick);
+			window.removeEventListener('click', handleClickAside);
 		};
 	}, [onChange, isOpen]);
 };
