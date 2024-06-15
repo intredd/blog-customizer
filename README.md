@@ -3,11 +3,8 @@
 
 **image**
 
-**Ссылка на проект**
-[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
-
 **Ссылка на макет в Figma**
-*Здесь будет ссылка на макет в Figma, если он имеется.*
+[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
 
 **Структура проекта**
 frontend - этот репозиторий ❤️
